@@ -1,1 +1,28 @@
+/* ===== RESET ===== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ===== BODY ===== */
+
+body{
+
+    background:#F7F4EF;
+
+    color:#3E3A35;
+
+    font-family:Georgia, serif;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
