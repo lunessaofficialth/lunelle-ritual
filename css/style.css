@@ -26,3 +26,48 @@ body{
     align-items:center;
 
 }
+
+/* ===== HERO ===== */
+
+main{
+
+    text-align:center;
+
+}
+
+
+h1{
+
+    font-size:48px;
+
+    font-weight:normal;
+
+    margin-bottom:20px;
+
+}
+
+
+p{
+
+    font-size:18px;
+
+    margin-bottom:40px;
+
+}
+
+
+button{
+
+    background:#D6C2A5;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
