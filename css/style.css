@@ -11,9 +11,14 @@
 
 body{
 
-    background:#F7F4EF;
+    background:linear-gradient(
+        180deg,
+        #FFFCF8 0%,
+        #F8F2EA 55%,
+        #EFE5D8 100%
+    );
 
-    color:#3E3A35;
+    color:#403A35;
 
     font-family:Georgia, serif;
 
@@ -32,6 +37,8 @@ body{
 main{
 
     text-align:center;
+
+    animation:fadeUp 1.8s ease;
 
 }
 
@@ -58,17 +65,33 @@ p{
 
 button{
 
-    background:#D6C2A5;
+    background:#D7BE97;
+
+    color:#3A332D;
 
     border:none;
 
-    padding:15px 35px;
+    padding:16px 40px;
 
     border-radius:999px;
 
+    font-size:16px;
+
     cursor:pointer;
 
-    font-size:16px;
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    background:#CCB082;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.12);
 
 }
 
@@ -76,6 +99,34 @@ button{
 
     width:220px;
 
-    margin-bottom:35px;
+    margin-bottom:30px;
+
+    transition:.5s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.04);
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
 
 }
