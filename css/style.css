@@ -1,4 +1,6 @@
-/* ===== RESET ===== */
+/* ===========================
+   RESET
+=========================== */
 
 *{
     margin:0;
@@ -7,20 +9,18 @@
 }
 
 
-/* ===== BODY ===== */
+/* ===========================
+   BODY
+=========================== */
 
 body{
 
-    background:linear-gradient(
-        180deg,
-        #FFFCF8 0%,
-        #F8F2EA 55%,
-        #EFE5D8 100%
-    );
+    background:
+    radial-gradient(circle at top,#FFFDF9 0%,#F8F2EA 45%,#EFE5D8 100%);
 
     color:#403A35;
 
-    font-family:Georgia, serif;
+    font-family:Georgia,serif;
 
     min-height:100vh;
 
@@ -30,52 +30,118 @@ body{
 
     align-items:center;
 
+    overflow:hidden;
+
+    position:relative;
+
 }
 
-/* ===== HERO ===== */
+
+/* ===========================
+   GLOW
+=========================== */
+
+.hero-glow{
+
+    position:absolute;
+
+    width:520px;
+
+    height:520px;
+
+    border-radius:50%;
+
+    background:radial-gradient(
+
+        circle,
+
+        rgba(255,236,190,.85) 0%,
+
+        rgba(255,230,175,.35) 45%,
+
+        rgba(255,230,175,0) 75%
+
+    );
+
+    filter:blur(25px);
+
+    animation:breath 7s ease-in-out infinite;
+
+}
+
+
+/* ===========================
+   MAIN
+=========================== */
 
 main{
 
+    position:relative;
+
+    z-index:2;
+
     text-align:center;
 
-    animation:fadeUp 1.8s ease;
+    animation:fadeUp 1.6s ease;
 
 }
 
 
-h1{
+/* ===========================
+   LOGO
+=========================== */
 
-    font-size:48px;
+.logo{
 
-    font-weight:normal;
+    width:280px;
 
-    margin-bottom:20px;
+    margin-bottom:45px;
+
+    transition:.5s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.02);
 
 }
 
 
-p{
+/* ===========================
+   TEXT
+=========================== */
 
-    font-size:18px;
+.subtitle{
 
-    margin-bottom:40px;
+    font-size:22px;
+
+    line-height:1.6;
+
+    margin-bottom:45px;
+
+    color:#4A443F;
 
 }
 
+
+/* ===========================
+   BUTTON
+=========================== */
 
 button{
 
-    background:#D7BE97;
+    background:#D8BC8C;
 
-    color:#3A332D;
+    color:#463F37;
 
     border:none;
 
-    padding:16px 40px;
+    padding:18px 42px;
 
     border-radius:999px;
 
-    font-size:16px;
+    font-size:17px;
 
     cursor:pointer;
 
@@ -85,31 +151,20 @@ button{
 
 button:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 
-    background:#CCB082;
+    background:#D1B07A;
 
     box-shadow:
 
-        0 15px 35px rgba(0,0,0,.12);
+    0 18px 40px rgba(0,0,0,.12);
 
 }
 
-.logo{
 
-    width:220px;
-
-    margin-bottom:30px;
-
-    transition:.5s;
-
-}
-
-.logo:hover{
-
-    transform:scale(1.04);
-
-}
+/* ===========================
+   ANIMATION
+=========================== */
 
 @keyframes fadeUp{
 
@@ -117,7 +172,7 @@ button:hover{
 
         opacity:0;
 
-        transform:translateY(40px);
+        transform:translateY(35px);
 
     }
 
@@ -126,6 +181,35 @@ button:hover{
         opacity:1;
 
         transform:translateY(0);
+
+    }
+
+}
+
+
+@keyframes breath{
+
+    0%{
+
+        transform:scale(1);
+
+        opacity:.9;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:.9;
 
     }
 
