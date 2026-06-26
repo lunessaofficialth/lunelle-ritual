@@ -214,3 +214,69 @@ button:hover{
     }
 
 }
+
+/* ===========================
+   RITUAL SECTION
+=========================== */
+
+#ritual-selection{
+
+    padding:180px 30px;
+
+    text-align:center;
+
+    background:#FCFAF7;
+
+}
+
+#ritual-selection h2{
+
+    font-size:42px;
+
+    font-weight:normal;
+
+    margin-bottom:20px;
+
+}
+
+.ritual-text{
+
+    color:#726A63;
+
+    font-size:18px;
+
+    margin-bottom:70px;
+
+    line-height:1.8;
+
+}
+
+.ritual-card{
+
+    width:320px;
+
+    margin:25px auto;
+
+    padding:28px;
+
+    border:1px solid #E6D8C7;
+
+    border-radius:22px;
+
+    background:white;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    font-size:22px;
+
+}
+
+.ritual-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
