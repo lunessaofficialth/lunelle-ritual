@@ -20,19 +20,11 @@ body{
 
     color:#403A35;
 
-    font-family:Georgia,serif;
+    font-family:Georgia, serif;
 
-    min-height:100vh;
+    margin:0;
 
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    overflow:hidden;
-
-    position:relative;
+    overflow-x:hidden;
 
 }
 
@@ -76,13 +68,21 @@ body{
 
 main{
 
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
     position:relative;
 
     z-index:2;
 
     text-align:center;
-
-    animation:fadeUp 1.6s ease;
 
 }
 
