@@ -306,13 +306,21 @@ body{
 
 }
 
-/* ---------- JOURNEY ---------- */
+/* ---------- DISCOVER LUNELLE ---------- */
 
 #journey{
 
-    background:#F8F5F0;
+    background:#F6F2EC;
 
     padding:120px 24px;
+
+}
+
+#journey .section-container{
+
+    max-width:760px;
+
+    margin:auto;
 
 }
 
@@ -320,11 +328,11 @@ body{
 
     text-align:center;
 
-    font-size:44px;
+    font-size:48px;
 
-    font-weight:normal;
+    font-weight:400;
 
-    margin-bottom:18px;
+    margin-bottom:20px;
 
 }
 
@@ -332,9 +340,11 @@ body{
 
     text-align:center;
 
-    color:#726A63;
+    color:#77706A;
 
     font-size:18px;
+
+    line-height:1.8;
 
     margin-bottom:60px;
 
@@ -342,55 +352,41 @@ body{
 
 .journey-card{
 
-    display:flex;
-
-    align-items:center;
-
-    gap:24px;
+    display:block;
 
     text-decoration:none;
 
     color:#2F2F2F;
 
-    background:white;
+    background:#FFFFFF;
 
-    border:1px solid #E6DCCF;
+    border:1px solid #E8DED0;
 
     border-radius:22px;
 
-    padding:24px 28px;
+    padding:28px 32px;
 
-    margin-bottom:20px;
+    margin-bottom:22px;
 
-    transition:.3s;
+    transition:0.3s;
 
 }
 
 .journey-card:hover{
 
-    transform:translateY(-4px);
+    transform:translateY(-5px);
 
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
-
-}
-
-.journey-icon{
-
-    font-size:32px;
-
-    width:50px;
-
-    text-align:center;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
 
 }
 
 .journey-card h3{
 
-    font-size:24px;
+    font-size:26px;
 
-    font-weight:normal;
+    font-weight:400;
 
-    margin-bottom:6px;
+    margin-bottom:10px;
 
 }
 
@@ -398,6 +394,6 @@ body{
 
     color:#7B726B;
 
-    font-size:16px;
+    line-height:1.8;
 
 }
